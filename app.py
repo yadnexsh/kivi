@@ -1,6 +1,15 @@
 import os
 import logging
 import shutil
+import random
+import string
+from flask import Flask, render_template, redirect, url_for, request, flash
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.utils import secure_filename
+from datetime import datetime
+import uuid
 
 db_folder = 'database'
 os.makedirs(db_folder, exist_ok=True)
@@ -39,14 +48,6 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
-
-from flask import Flask, render_template, redirect, url_for, request, flash
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-from werkzeug.security import generate_password_hash, check_password_hash
-from werkzeug.utils import secure_filename
-import uuid
-from datetime import datetime
 
 db_path = os.path.abspath(os.path.join(db_folder, 'database.db'))
 
@@ -97,6 +98,49 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+def generate_base_username(first, middle, last):
+    first = first.lower()
+    middle = middle.lower() if middle else ''
+    last = last.lower()
+
+    if not first or not last:
+        return ''
+
+    # Logic per your request
+    if middle and len(last) >= 2:
+        base = first[0] + middle[0] + last[-2:]
+    elif len(first) >= 2 and len(last) >= 2:
+        base = first[:2] + last[-2:]
+    else:
+        base = (first[0] + (middle[0] if middle else '') + last)[:4]
+        if len(base) < 4:
+            pad_source = last + first + middle
+            idx = 0
+            while len(base) < 4:
+                if idx >= len(pad_source):
+                    base += 'x'
+                else:
+                    base += pad_source[idx]
+                idx += 1
+
+    if len(base) > 5:
+        base = base[:5]
+
+    return base
+
+def generate_unique_username(base_username):
+    username = base_username
+    attempts = 0
+    while User.query.filter_by(username=username).first():
+        attempts += 1
+        if len(username) < 5:
+            username += random.choice(string.ascii_lowercase + string.digits)
+        else:
+            username = username[:-1] + random.choice(string.ascii_lowercase + string.digits)
+        if attempts > 10:
+            username = username + str(random.randint(0,9))
+    return username
+
 @app.route('/')
 def home():
     return redirect(url_for('login'))
@@ -132,8 +176,6 @@ def admin_dashboard():
 
     msg = None
     users = User.query.filter(User.username != 'admin').order_by(User.username.asc()).all()
-
-    # Read last 100 entries from masterlog.txt for activity and reverse for newest on top
     activity_logs = []
     if os.path.exists(master_log_file):
         with open(master_log_file, 'r', encoding='utf-8') as f:
@@ -143,25 +185,27 @@ def admin_dashboard():
 
     if request.method == 'POST':
         if 'register_user' in request.form:
-            reg_username = request.form.get('username')
-            reg_password = request.form.get('password')
-            reg_is_admin = bool(request.form.get('is_admin', False))
-            if not reg_username or not reg_password:
-                msg = 'Please fill out all fields for registration.'
-            elif User.query.filter_by(username=reg_username).first():
-                msg = 'Username already taken.'
+            first_name = request.form.get('first_name', '').strip()
+            middle_name = request.form.get('middle_name', '').strip()
+            last_name = request.form.get('last_name', '').strip()
+            is_admin = bool(request.form.get('is_admin', False))
+
+            if not first_name or not last_name:
+                msg = 'First and last name are required.'
             else:
-                hashed_pw = generate_password_hash(reg_password)
-                user = User(username=reg_username, password=hashed_pw, is_admin=reg_is_admin)
-                db.session.add(user)
-                db.session.commit()
-                user_log_dir = os.path.join(db_folder, 'users', str(user.username))
-                os.makedirs(user_log_dir, exist_ok=True)
-                creation_detail = f"created user {user.username} by {current_user.username}"
-                log_action(current_user.username, "user_created", creation_detail)
-                log_action(current_user.username, "create_user", f"new_username: {reg_username}, is_admin: {reg_is_admin}")
-                msg = 'New user created.'
-                users = User.query.filter(User.username != 'admin').order_by(User.username.asc()).all()
+                base_username = generate_base_username(first_name, middle_name, last_name)
+                if base_username == '':
+                    msg = 'Invalid name input for username.'
+                else:
+                    unique_username = generate_unique_username(base_username)
+                    default_password = 'welcome'
+                    hashed_pw = generate_password_hash(default_password)
+                    user = User(username=unique_username, password=hashed_pw, is_admin=is_admin)
+                    db.session.add(user)
+                    db.session.commit()
+                    msg = f'New user created with UserID: {unique_username} and password: welcome'
+                    log_action(current_user.username, "user_created", unique_username)
+                    users = User.query.filter(User.username != 'admin').order_by(User.username.asc()).all()
         elif 'delete_user' in request.form:
             del_username = request.form.get('username')
             if del_username:
@@ -180,7 +224,6 @@ def admin_dashboard():
             else:
                 msg = 'No user selected for deletion.'
 
-        # Refresh activity logs after action
         if os.path.exists(master_log_file):
             with open(master_log_file, 'r', encoding='utf-8') as f:
                 lines = f.readlines()
@@ -249,4 +292,3 @@ if __name__ == '__main__':
             print("Default admin user created: admin/admin")
             log_action("system", "user_created", "[DEFAULT] system created admin")
     app.run(debug=True)
- 

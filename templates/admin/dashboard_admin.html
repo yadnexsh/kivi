@@ -111,7 +111,7 @@
     }
     .accordion-content.active {
       padding: 20px 26px 28px 26px;
-      max-height: 480px;
+      max-height: 520px;
       transition: max-height 0.5s cubic-bezier(.4,0,.2,1);
     }
     .admin-form label {
@@ -182,10 +182,10 @@
       flex: 0 0 42%;
       background: #fff;
       border-left: 1px solid #ddd;
-      padding: 46px 36px 20px 36px;
+      padding: 6px 36px 20px 36px;
       box-sizing: border-box;
       overflow-y: auto;
-      max-height: 100vh; /* full viewport height */
+      max-height: 100vh;
       white-space: pre-wrap;
       font-family: monospace, monospace;
       font-size: 1em;
@@ -205,6 +205,7 @@
       font-size: 2em;
       font-weight: 600;
       margin-bottom: 20px;
+      margin-top: 0;
     }
     .footer {
       position: fixed;
@@ -274,15 +275,18 @@
         <div class="accordion-section">
           <button class="accordion-header" onclick="toggleAccordion(0)">Register User</button>
           <div class="accordion-content">
-            <form method="post" class="admin-form">
+            <form method="post" id="registerUserForm" class="admin-form" onsubmit="return prepareUserId()">
               <input type="hidden" name="register_user" value="1" />
-              <label for="username">Username:</label>
-              <input type="text" name="username" required />
-              <label for="password">Password:</label>
-              <input type="password" name="password" required />
-              <label>
-                <input type="checkbox" name="is_admin" /> Is Admin
-              </label><br />
+              <label for="first_name">First Name:</label>
+              <input type="text" id="first_name" name="first_name" required oninput="updateUsernamePreview()"/>
+              <label for="middle_name">Middle Name (optional):</label>
+              <input type="text" id="middle_name" name="middle_name" oninput="updateUsernamePreview()"/>
+              <label for="last_name">Last Name:</label>
+              <input type="text" id="last_name" name="last_name" required oninput="updateUsernamePreview()"/>
+              <label><input type="checkbox" name="is_admin" /> Is Admin</label><br />
+              <div style="margin-top:16px; font-weight: 600;">
+                Suggested UserID: <span id="usernamePreview" style="color:#3a9d9d; user-select: text;">(auto-generated)</span>
+              </div>
               <button type="submit">Create User</button>
             </form>
           </div>
@@ -328,10 +332,70 @@
     <span class="credit">made by yadnexsh</span>
   </div>
   <script>
+    function updateUsernamePreview() {
+      const first = document.getElementById('first_name').value.trim().toLowerCase();
+      const middle = document.getElementById('middle_name').value.trim().toLowerCase();
+      const last = document.getElementById('last_name').value.trim().toLowerCase();
+
+      if (!first || !last) {
+        document.getElementById('usernamePreview').textContent = '(auto-generated)';
+        return;
+      }
+
+      let base = '';
+      if (middle && last.length >= 2) {
+        base = first.charAt(0) + middle.charAt(0) + last.slice(-2);
+      }
+      else if (first.length >= 2 && last.length >= 2) {
+        base = first.slice(0, 2) + last.slice(-2);
+      }
+      else {
+        base = (first.charAt(0) + (middle ? middle.charAt(0) : '') + last).slice(0, 4);
+        if (base.length < 4) {
+          const padLetters = last + first + middle;
+          let idx = 0;
+          let username = base;
+          while (username.length < 4) {
+            if (idx >= padLetters.length) {
+              username += 'x'; 
+            } else {
+              username += padLetters.charAt(idx);
+            }
+            idx++;
+          }
+          base = username;
+        }
+      }
+
+      if (base.length > 5) base = base.slice(0, 5);
+
+      document.getElementById('usernamePreview').textContent = base;
+    }
+
+    function prepareUserId() {
+      const usernameSpan = document.getElementById('usernamePreview');
+      if (!usernameSpan || usernameSpan.textContent === '(auto-generated)') {
+        alert('Please enter valid first and last names to generate a user ID.');
+        return false;
+      }
+      let existing = document.getElementById('generatedUsernameInput');
+      if (!existing) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'generated_username';
+        input.id = 'generatedUsernameInput';
+        input.value = usernameSpan.textContent;
+        document.getElementById('registerUserForm').appendChild(input);
+      } else {
+        existing.value = usernameSpan.textContent;
+      }
+      return true;
+    }
+
     function toggleAccordion(index) {
       var headers = document.querySelectorAll('.accordion-header');
       var contents = document.querySelectorAll('.accordion-content');
-      for(var i=0; i<contents.length; i++) {
+      for(var i=0; i < contents.length; i++) {
         if(i === index) {
           headers[i].classList.toggle('active');
           contents[i].classList.toggle('active');
@@ -343,6 +407,7 @@
     }
     window.onload = function() {
       toggleAccordion(0);
+      updateUsernamePreview();
     };
   </script>
 </body>

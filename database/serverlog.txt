@@ -1213,3 +1213,130 @@
 127.0.0.1 - - [14/Sep/2025 06:43:40] "POST /admin HTTP/1.1" 200 -
 127.0.0.1 - - [14/Sep/2025 06:43:41] "POST /admin HTTP/1.1" 200 -
 127.0.0.1 - - [14/Sep/2025 06:43:54] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:44:28] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:45:57] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:46:04] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:46:14] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 06:47:33 > admin > delete_user > deleted user 123
+127.0.0.1 - - [14/Sep/2025 06:47:33] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 06:47:36 > admin > delete_user > deleted user admin/2
+127.0.0.1 - - [14/Sep/2025 06:47:36] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 06:47:39 > admin > delete_user > deleted user sunsh
+127.0.0.1 - - [14/Sep/2025 06:47:39] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:47:52] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:51:28] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:56:28] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 06:57:07] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 06:58:56 > admin > user_created > scor
+127.0.0.1 - - [14/Sep/2025 06:58:56] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 06:59:12 > admin > user_created > ydgon
+127.0.0.1 - - [14/Sep/2025 06:59:12] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+2025-09-14 > 07:01:09 > admin > user_created > ydgonr
+127.0.0.1 - - [14/Sep/2025 07:01:09] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:01:16 > admin > delete_user > deleted user ydgon
+127.0.0.1 - - [14/Sep/2025 07:01:16] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:01:19 > admin > delete_user > deleted user scor
+127.0.0.1 - - [14/Sep/2025 07:01:19] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:01:22 > admin > delete_user > deleted user ydgonr
+127.0.0.1 - - [14/Sep/2025 07:01:22] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:01:26 > admin > user_created > ydgon
+127.0.0.1 - - [14/Sep/2025 07:01:26] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 07:02:58] "[35m[1mPOST /admin HTTP/1.1[0m" 500 -
+127.0.0.1 - - [14/Sep/2025 07:02:58] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 07:02:58] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 07:02:58] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=cL1UULyAgBy2fZGv22tb HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 07:02:58] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+2025-09-14 > 07:07:54 > admin > user_created > ydg
+127.0.0.1 - - [14/Sep/2025 07:07:54] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+2025-09-14 > 07:08:35 > admin > user_created > ydgt
+127.0.0.1 - - [14/Sep/2025 07:08:35] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:08:44 > admin > delete_user > deleted user ydg
+127.0.0.1 - - [14/Sep/2025 07:08:44] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:08:47 > admin > delete_user > deleted user ydgon
+127.0.0.1 - - [14/Sep/2025 07:08:47] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:08:51 > admin > delete_user > deleted user ydgt
+127.0.0.1 - - [14/Sep/2025 07:08:51] "POST /admin HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 07:08:57] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:09:09 > admin > user_created > asa
+127.0.0.1 - - [14/Sep/2025 07:09:09] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:09:17 > admin > user_created > arw
+127.0.0.1 - - [14/Sep/2025 07:09:17] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+2025-09-14 > 07:18:07 > admin > user_created > astw
+127.0.0.1 - - [14/Sep/2025 07:18:07] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:18:15 > admin > user_created > yaar
+127.0.0.1 - - [14/Sep/2025 07:18:15] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:18:26 > admin > delete_user > deleted user arw
+127.0.0.1 - - [14/Sep/2025 07:18:26] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:18:29 > admin > delete_user > deleted user asa
+127.0.0.1 - - [14/Sep/2025 07:18:29] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:18:32 > admin > delete_user > deleted user astw
+127.0.0.1 - - [14/Sep/2025 07:18:32] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:18:35 > admin > delete_user > deleted user yaar
+127.0.0.1 - - [14/Sep/2025 07:18:35] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:18:42 > admin > user_created > yaar
+127.0.0.1 - - [14/Sep/2025 07:18:42] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:18:53 > admin > user_created > ydar
+127.0.0.1 - - [14/Sep/2025 07:18:53] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================

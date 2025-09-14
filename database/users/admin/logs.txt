@@ -29,3 +29,31 @@
 2025-09-14 > 06:10:19 > admin > user_created > created user 123 by admin
 2025-09-14 > 06:10:19 > admin > create_user > new_username: 123, is_admin: True
 2025-09-14 > 06:23:13 > admin > login > username: admin
+2025-09-14 > 06:47:33 > admin > delete_user > deleted user 123
+2025-09-14 > 06:47:36 > admin > delete_user > deleted user admin/2
+2025-09-14 > 06:47:39 > admin > delete_user > deleted user sunsh
+2025-09-14 > 06:58:56 > admin > user_created > scor
+2025-09-14 > 06:59:12 > admin > user_created > ydgon
+2025-09-14 > 07:01:09 > admin > user_created > ydgonr
+2025-09-14 > 07:01:16 > admin > delete_user > deleted user ydgon
+2025-09-14 > 07:01:19 > admin > delete_user > deleted user scor
+2025-09-14 > 07:01:22 > admin > delete_user > deleted user ydgonr
+2025-09-14 > 07:01:26 > admin > user_created > ydgon
+2025-09-14 > 07:07:54 > admin > user_created > ydg
+2025-09-14 > 07:08:35 > admin > user_created > ydgt
+2025-09-14 > 07:08:44 > admin > delete_user > deleted user ydg
+2025-09-14 > 07:08:47 > admin > delete_user > deleted user ydgon
+2025-09-14 > 07:08:51 > admin > delete_user > deleted user ydgt
+2025-09-14 > 07:09:09 > admin > user_created > asa
+2025-09-14 > 07:09:17 > admin > user_created > arw
+2025-09-14 > 07:18:07 > admin > user_created > astw
+2025-09-14 > 07:18:15 > admin > user_created > yaar
+2025-09-14 > 07:18:26 > admin > delete_user > deleted user arw
+2025-09-14 > 07:18:29 > admin > delete_user > deleted user asa
+2025-09-14 > 07:18:32 > admin > delete_user > deleted user astw
+2025-09-14 > 07:18:35 > admin > delete_user > deleted user yaar
+2025-09-14 > 07:18:42 > admin > user_created > yaar
+2025-09-14 > 07:18:53 > admin > user_created > ydar
+2025-09-14 > 07:33:54 > admin > user_created > ydar5
+2025-09-14 > 07:34:05 > admin > user_created > tesd
+2025-09-14 > 07:34:19 > admin > user_created > sccs
