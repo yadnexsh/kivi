@@ -62,3 +62,20 @@
 2025-09-14 > 07:58:09 > admin > login > username: admin
 2025-09-14 > 08:10:00 > admin > logout > username: admin
 2025-09-14 > 08:10:03 > admin > login > username: admin
+2025-09-14 > 08:24:29 > admin > user_created > ydar | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:24:32 > admin > user_created > ydarb | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:24:57 > admin > user_created > sass | sasd asd s
+2025-09-14 > 08:25:24 > admin > change_admin_status > granted admin to ydar | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:25:31 > admin > delete_user > deleted user sass | sasd asd s
+2025-09-14 > 08:25:37 > admin > delete_user > deleted user ydar | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:25:48 > admin > delete_user > deleted user ydarb | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:26:08 > admin > user_created > ydar | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:26:32 > admin > user_created > ydarv | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:26:41 > admin > user_created > ydar1 | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:27:53 > admin > change_admin_status > removed admin from ydarv | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:27:59 > admin > change_admin_status > granted admin to ydar | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:28:05 > admin > delete_user > deleted user ydar | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:28:11 > admin > delete_user > deleted user ydarv | Yadnyesh Deepak Gondhalekar
+2025-09-14 > 08:30:50 > admin > delete_user > deleted user ydar1
+2025-09-14 > 08:32:29 > admin > user_created > ydar
+2025-09-14 > 08:32:33 > admin > delete_user > deleted user ydar

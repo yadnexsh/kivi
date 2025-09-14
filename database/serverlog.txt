@@ -1395,3 +1395,79 @@
  * Debugger is active!
  * Debugger PIN: 138-546-674
 ================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 08:09:42] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:09:46] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:09:57] "GET /admin HTTP/1.1" 200 -
+2025-09-14 > 08:10:00 > admin > logout > username: admin
+127.0.0.1 - - [14/Sep/2025 08:10:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 08:10:00] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:10:00] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 08:10:03 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 08:10:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 08:10:03] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:10:03] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 08:10:06] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:10:24] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:13:26] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:13:36] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:23:04] "GET /admin HTTP/1.1" 200 -
+2025-09-14 > 08:24:29 > admin > user_created > ydar | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:24:29] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:24:32 > admin > user_created > ydarb | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:24:32] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:24:57 > admin > user_created > sass | sasd asd s
+127.0.0.1 - - [14/Sep/2025 08:24:57] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:25:12] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:25:18] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:25:24 > admin > change_admin_status > granted admin to ydar | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:25:24] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:25:31 > admin > delete_user > deleted user sass | sasd asd s
+127.0.0.1 - - [14/Sep/2025 08:25:31] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:25:37 > admin > delete_user > deleted user ydar | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:25:37] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:25:43] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:25:48 > admin > delete_user > deleted user ydarb | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:25:48] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:25:54] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:26:02] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:26:08 > admin > user_created > ydar | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:26:08] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:26:14] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:26:19] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:26:23] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:26:26] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:26:32 > admin > user_created > ydarv | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:26:32] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:26:41 > admin > user_created > ydar1 | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:26:41] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:26:49] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:26:53] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:26:58] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:27:00] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:27:03] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:27:08] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:27:13] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:27:17] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:27:45] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:27:50] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:27:53 > admin > change_admin_status > removed admin from ydarv | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:27:53] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:27:59 > admin > change_admin_status > granted admin to ydar | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:27:59] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:28:05 > admin > delete_user > deleted user ydar | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:28:05] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:28:11 > admin > delete_user > deleted user ydarv | Yadnyesh Deepak Gondhalekar
+127.0.0.1 - - [14/Sep/2025 08:28:11] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 08:30:43] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:30:50 > admin > delete_user > deleted user ydar1
+127.0.0.1 - - [14/Sep/2025 08:30:50] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
