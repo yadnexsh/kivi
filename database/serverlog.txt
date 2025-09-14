@@ -1115,3 +1115,86 @@
 2025-09-14 > 06:10:19 > admin > user_created > created user 123 by admin
 2025-09-14 > 06:10:19 > admin > create_user > new_username: 123, is_admin: True
 127.0.0.1 - - [14/Sep/2025 06:10:19] "POST /admin HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 06:23:09] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 06:23:09] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:23:09] "GET /media/server/login.jpg HTTP/1.1" 200 -
+2025-09-14 > 06:23:13 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 06:23:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 06:23:13] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:23:13] "GET /media/server/dashboard.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:23:16] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:25:39] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:25:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2025 06:27:44] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:27:44] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2025 06:29:42] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2025 06:30:15] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:30:17] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:30:17] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:30:25] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:30:29] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:30:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2025 06:30:32] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:30:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2025 06:30:38] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:30:42] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:30:49] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:31:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2025 06:32:41] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:32:42] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:32:42] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:33:51] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:33:52] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:33:54] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:33:54] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:33:55] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:33:55] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:33:56] "GET /admin HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 06:34:07] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:34:07] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:34:07] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:34:07] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:34:08] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:34:10] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:34:10] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 06:34:13] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:36:30] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:36:31] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:36:31] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:36:38] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:37:09] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:37:46] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:39:37] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:39:38] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:40:29] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:40:29] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:40:30] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:40:30] "GET /admin HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 06:40:36] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:40:37] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:40:37] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:40:37] "GET /admin HTTP/1.1" 200 -

@@ -5,10 +5,10 @@
   <title>Admin Dashboard | Trek App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
-    body {
-      margin: 0; padding: 0;
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      background: #222;
       font-family: Helvetica, Arial, sans-serif;
-      background: #222; min-height: 100vh;
     }
     .admin-container {
       display: flex;
@@ -177,11 +177,13 @@
       padding: 46px 36px 20px 36px;
       box-sizing: border-box;
       overflow-y: auto;
-      min-height: calc(100vh - 34px);
+      max-height: calc(100vh - 34px);
       white-space: pre-wrap;
       font-family: monospace, monospace;
       font-size: 0.9em;
       color: #222;
+      position: sticky;
+      top: 34px;
     }
     .activity-title {
       font-size: 2em;
@@ -223,6 +225,8 @@
         max-height: 180px;
         overflow-y: auto;
         white-space: normal;
+        position: static;
+        top: auto;
       }
     }
   </style>
@@ -238,11 +242,9 @@
         [{{ current_user.username }}]
       </div>
       <div class="divider"></div>
-
       {% if msg %}
       <div class="flash-msg">{{ msg }}</div>
       {% endif %}
-
       <div class="accordion">
         <div class="accordion-section">
           <button class="accordion-header" onclick="toggleAccordion(0)">Register User</button>
@@ -288,8 +290,7 @@
       <div class="activity-title">Activity</div>
       {% if activity_logs %}
       <pre>
-{% for line in activity_logs %}
-{{ line }}
+{% for line in activity_logs %}{{ line }}
 {% endfor %}
       </pre>
       {% else %}
@@ -301,7 +302,6 @@
     <span class="version">v.01</span>
     <span class="credit">made by yadnexsh</span>
   </div>
-
   <script>
     function toggleAccordion(index) {
       var headers = document.querySelectorAll('.accordion-header');
