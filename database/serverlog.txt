@@ -1340,3 +1340,58 @@
  * Debugger is active!
  * Debugger PIN: 138-546-674
 ================================================================ SERVER LOG DIVIDER ================================================================
+2025-09-14 > 07:33:54 > admin > user_created > ydar5
+127.0.0.1 - - [14/Sep/2025 07:33:54] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:34:05 > admin > user_created > tesd
+127.0.0.1 - - [14/Sep/2025 07:34:05] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:34:19 > admin > user_created > sccs
+127.0.0.1 - - [14/Sep/2025 07:34:19] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+2025-09-14 > 07:45:04 > system > user_created > [DEFAULT] system created admin
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+2025-09-14 > 07:45:08 > admin > user_created > sccs | sunshin c
+127.0.0.1 - - [14/Sep/2025 07:45:08] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:45:38 > admin > delete_user > deleted user sccs | sunshin c
+127.0.0.1 - - [14/Sep/2025 07:45:38] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 07:47:40 > system > user_created > [DEFAULT] system created admin
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 07:58:02] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 07:58:02] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 07:58:02] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 07:58:09 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 07:58:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 07:58:09] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 07:58:09] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 07:58:14] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 07:58:22] "[33mGET /users HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2025 07:59:05] "GET /admin/users HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 07:59:15] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 07:59:33] "GET /admin/users/search HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================

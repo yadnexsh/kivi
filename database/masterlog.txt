@@ -28,3 +28,10 @@
 2025-09-14 > 07:33:54 > admin > user_created > ydar5
 2025-09-14 > 07:34:05 > admin > user_created > tesd
 2025-09-14 > 07:34:19 > admin > user_created > sccs
+2025-09-14 > 07:45:04 > system > user_created > [DEFAULT] system created admin
+2025-09-14 > 07:45:08 > admin > user_created > sccs | sunshin c
+2025-09-14 > 07:45:38 > admin > delete_user > deleted user sccs | sunshin c
+2025-09-14 > 07:47:40 > system > user_created > [DEFAULT] system created admin
+2025-09-14 > 07:58:09 > admin > login > username: admin
+2025-09-14 > 08:10:00 > admin > logout > username: admin
+2025-09-14 > 08:10:03 > admin > login > username: admin

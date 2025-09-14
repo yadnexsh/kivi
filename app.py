@@ -84,6 +84,10 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(150), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
+    first_name = db.Column(db.String(100))
+    middle_name = db.Column(db.String(100))
+    last_name = db.Column(db.String(100))
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
 class Photo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -95,8 +99,7 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 def allowed_file(filename):
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 def generate_base_username(first, middle, last):
     first = first.lower()
@@ -106,7 +109,6 @@ def generate_base_username(first, middle, last):
     if not first or not last:
         return ''
 
-    # Logic per your request
     if middle and len(last) >= 2:
         base = first[0] + middle[0] + last[-2:]
     elif len(first) >= 2 and len(last) >= 2:
@@ -175,13 +177,28 @@ def admin_dashboard():
         return redirect(url_for('dashboard'))
 
     msg = None
+    page = request.args.get('page', 1, type=int)
+    search = request.args.get('search', '', type=str)
+
+    user_query = User.query.filter(User.username != 'admin')
+    if search:
+        pattern = f"%{search}%"
+        user_query = user_query.filter(
+            db.or_(
+                User.username.ilike(pattern),
+                User.first_name.ilike(pattern),
+                User.last_name.ilike(pattern)
+            )
+        )
+    paginated_users = user_query.order_by(User.created_at.desc()).paginate(page=page, per_page=20)
+
     users = User.query.filter(User.username != 'admin').order_by(User.username.asc()).all()
-    activity_logs = []
-    if os.path.exists(master_log_file):
-        with open(master_log_file, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-            activity_logs = [line.strip() for line in lines[-100:]]
-            activity_logs.reverse()
+    user_ids = [u.id for u in paginated_users.items]
+    uploads_query = db.session.query(Photo.uploader_id, db.func.count(Photo.id)).filter(Photo.uploader_id.in_(user_ids)).group_by(Photo.uploader_id).all()
+    uploads = {uid: count for uid, count in uploads_query}
+
+    selected_user = None
+    uploads_count = 0
 
     if request.method == 'POST':
         if 'register_user' in request.form:
@@ -194,43 +211,65 @@ def admin_dashboard():
                 msg = 'First and last name are required.'
             else:
                 base_username = generate_base_username(first_name, middle_name, last_name)
-                if base_username == '':
-                    msg = 'Invalid name input for username.'
-                else:
-                    unique_username = generate_unique_username(base_username)
-                    default_password = 'welcome'
-                    hashed_pw = generate_password_hash(default_password)
-                    user = User(username=unique_username, password=hashed_pw, is_admin=is_admin)
-                    db.session.add(user)
-                    db.session.commit()
-                    msg = f'New user created with UserID: {unique_username} and password: welcome'
-                    log_action(current_user.username, "user_created", unique_username)
-                    users = User.query.filter(User.username != 'admin').order_by(User.username.asc()).all()
-        elif 'delete_user' in request.form:
-            del_username = request.form.get('username')
-            if del_username:
-                user = User.query.filter_by(username=del_username).first()
-                if user:
-                    db.session.delete(user)
-                    db.session.commit()
-                    log_action(current_user.username, "delete_user", f"deleted user {del_username}")
-                    user_folder = os.path.join(db_folder, 'users', del_username)
-                    if os.path.exists(user_folder):
-                        shutil.rmtree(user_folder)
-                    msg = f'User {del_username} deleted.'
-                    users = User.query.filter(User.username != 'admin').order_by(User.username.asc()).all()
-                else:
-                    msg = 'User not found.'
+                unique_username = generate_unique_username(base_username)
+                hashed_pw = generate_password_hash('welcome')
+                user = User(username=unique_username, password=hashed_pw, is_admin=is_admin,
+                            first_name=first_name, middle_name=middle_name, last_name=last_name)
+                db.session.add(user)
+                db.session.commit()
+                full_name = f"{first_name} {middle_name + ' ' if middle_name else ''}{last_name}".strip()
+                log_action(current_user.username, 'user_created', f'{unique_username} | {full_name}')
+                msg = f'New user created with UserID: {unique_username} and password: welcome'
+                users = User.query.filter(User.username != 'admin').order_by(User.username.asc()).all()
+
+        elif 'manage_single_user' in request.form:
+            selected_username = request.form.get('selected_user', '').strip()
+            action = request.form.get('action')
+
+            if not selected_username:
+                msg = "Please select a user."
             else:
-                msg = 'No user selected for deletion.'
+                user = User.query.filter_by(username=selected_username).first()
+                if not user:
+                    msg = "User not found."
+                elif user.username == current_user.username and action == 'delete':
+                    msg = "You cannot delete yourself."
+                else:
+                    full_name = f"{user.first_name} {user.middle_name + ' ' if user.middle_name else ''}{user.last_name}".strip()
+                    if action == 'delete':
+                        db.session.delete(user)
+                        user_folder = os.path.join(db_folder, 'users', user.username)
+                        if os.path.exists(user_folder):
+                            shutil.rmtree(user_folder)
+                        log_action(current_user.username, 'delete_user', f'deleted user {user.username} | {full_name}')
+                        db.session.commit()
+                        msg = f"User {user.username} deleted."
+                    elif action == 'make_admin':
+                        if not user.is_admin:
+                            user.is_admin = True
+                            log_action(current_user.username, 'change_admin_status', f'granted admin to {user.username} | {full_name}')
+                            db.session.commit()
+                            msg = f"Admin rights granted to {user.username}."
+                    elif action == 'remove_admin':
+                        if user.is_admin:
+                            user.is_admin = False
+                            log_action(current_user.username, 'change_admin_status', f'removed admin from {user.username} | {full_name}')
+                            db.session.commit()
+                            msg = f"Admin rights removed from {user.username}."
+                    selected_user = user
+                    uploads_count = Photo.query.filter_by(uploader_id=user.id).count()
 
-        if os.path.exists(master_log_file):
-            with open(master_log_file, 'r', encoding='utf-8') as f:
-                lines = f.readlines()
-                activity_logs = [line.strip() for line in lines[-100:]]
-                activity_logs.reverse()
+    # Update paginated users after any post action
+    paginated_users = user_query.order_by(User.created_at.desc()).paginate(page=page, per_page=20)
 
-    return render_template('admin/dashboard_admin.html', users=users, msg=msg, activity_logs=activity_logs)
+    return render_template('admin/dashboard_admin.html',
+                           users=users,
+                           paginated_users=paginated_users.items,
+                           pagination=paginated_users,
+                           uploads=uploads,
+                           msg=msg,
+                           selected_user=selected_user,
+                           uploads_count=uploads_count)
 
 @app.route('/dashboard')
 @login_required
@@ -279,16 +318,14 @@ def download(photo_id):
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-        os.makedirs(os.path.join(db_folder, 'users', 'system'), exist_ok=True)
-        os.makedirs(os.path.join(db_folder, 'users', 'admin'), exist_ok=True)
         if not User.query.filter_by(username='admin').first():
             admin_user = User(
                 username='admin',
                 password=generate_password_hash('admin'),
-                is_admin=True
+                is_admin=True,
+                first_name='System',
+                last_name='Admin',
             )
             db.session.add(admin_user)
             db.session.commit()
-            print("Default admin user created: admin/admin")
-            log_action("system", "user_created", "[DEFAULT] system created admin")
-    app.run(debug=True)
+        app.run(debug=True)

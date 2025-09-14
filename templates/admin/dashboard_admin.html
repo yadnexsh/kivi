@@ -120,8 +120,7 @@
       margin-top: 18px;
       font-size: 1em;
     }
-    .admin-form input[type=text],
-    .admin-form input[type=password] {
+    .admin-form input[type=text] {
       padding: 7px 10px;
       font-size: 1em;
       border-radius: 4px;
@@ -149,21 +148,16 @@
     .admin-form button:hover {
       background: #3a9d9d;
     }
-    .user-list-table {
-      width: 88%;
-      border-collapse: collapse;
-      margin-top: 4px;
-    }
-    .user-list-table th,
-    .user-list-table td {
-      padding: 7px 8px;
-      border-bottom: 1px solid #ddd;
+    select[multiple] {
       font-size: 1em;
-      text-align: left;
-    }
-    .user-list-table th {
-      background: #f6f6f6;
-      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid #adbcc8;
+      margin-top: 8px;
+      height: 170px;
+      width: 95%;
+      box-sizing: border-box;
+      user-select: none;
     }
     .del-btn-table {
       background: #b43731;
@@ -177,6 +171,36 @@
     }
     .del-btn-table:hover {
       background: #941c19;
+    }
+    .action-btn {
+      background-color: #3a9d9d;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 1em;
+    }
+    .action-btn.remove {
+      background-color: #f08d49;
+      margin-left: 10px;
+    }
+    .user-list-table {
+      width: 88%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .user-list-table th,
+    .user-list-table td {
+      padding: 7px 8px;
+      border-bottom: 1px solid #ddd;
+      font-size: 1em;
+      text-align: left;
+    }
+    .user-list-table th {
+      background: #f6f6f6;
+      font-weight: 600;
     }
     .activity-panel {
       flex: 0 0 42%;
@@ -265,7 +289,7 @@
         <a href="{{ url_for('logout') }}" class="logout">logout</a>
       </div>
       <div class="userid">
-        [{{ current_user.username }}]
+        [{{ current_user.username }}{% if current_user.is_admin %} -admin{% endif %}]
       </div>
       <div class="divider"></div>
       {% if msg %}
@@ -291,30 +315,40 @@
             </form>
           </div>
         </div>
+
         <div class="accordion-section">
-          <button class="accordion-header" onclick="toggleAccordion(1)">Delete User</button>
+          <button class="accordion-header" onclick="toggleAccordion(1)">Users</button>
           <div class="accordion-content">
             <form method="post" class="admin-form">
-              <input type="hidden" name="delete_user" value="1" />
-              <label for="username">Select user to delete:</label>
-              <select name="username" required>
-                <option value="">--Choose User--</option>
+              <input type="hidden" name="manage_users" value="1" />
+              <label for="user_list">Select users:</label>
+              <select name="usernames" id="user_list" multiple size="8" required style="width: 95%; font-size: 1em;">
                 {% for user in users %}
-                  <option value="{{ user.username }}">{{ user.username }}{% if user.is_admin %} (admin){% endif %}</option>
+                  <option value="{{ user.username }}">{{ user.username }}{% if user.is_admin %} -admin{% endif %}</option>
                 {% endfor %}
               </select>
-              <button type="submit" class="del-btn-table">Delete User</button>
+              <div style="margin-top: 12px;">
+                <button type="submit" name="action" value="delete" class="del-btn-table" style="margin-right: 10px;">Delete Users</button>
+                <button type="submit" name="action" value="make_admin" class="action-btn">Admin +</button>
+                <button type="submit" name="action" value="remove_admin" class="action-btn remove">Admin -</button>
+              </div>
             </form>
-            <table class="user-list-table">
+
+            <table class="user-list-table" style="margin-top: 20px;">
               <tr><th>UserID</th><th>Admin?</th></tr>
               {% for user in users %}
-                <tr><td>{{ user.username }}</td><td>{% if user.is_admin %}<b>yes</b>{% else %}no{% endif %}</td></tr>
+                <tr>
+                  <td>{{ user.username }}{% if user.is_admin %} -admin{% endif %}</td>
+                  <td>{% if user.is_admin %}<b>yes</b>{% else %}no{% endif %}</td>
+                </tr>
               {% endfor %}
             </table>
           </div>
         </div>
+
       </div>
     </div>
+
     <div class="activity-panel">
       <div class="activity-title">Activity</div>
       {% if activity_logs %}
@@ -327,10 +361,12 @@
       {% endif %}
     </div>
   </div>
+
   <div class="footer">
     <span class="version">v.01</span>
     <span class="credit">made by yadnexsh</span>
   </div>
+
   <script>
     function updateUsernamePreview() {
       const first = document.getElementById('first_name').value.trim().toLowerCase();
@@ -357,7 +393,7 @@
           let username = base;
           while (username.length < 4) {
             if (idx >= padLetters.length) {
-              username += 'x'; 
+              username += 'x';
             } else {
               username += padLetters.charAt(idx);
             }
