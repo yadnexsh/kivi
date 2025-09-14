@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Upload Photo</title></head>
+<body>
+  <h2>Upload a Photo</h2>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul style="color:red;">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="photo"><br><br>
+    <input type="submit" value="Upload">
+  </form>
+  <a href="{{ url_for('dashboard') }}">Back to dashboard</a>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard | Trek App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: #222; min-height: 100vh;
+    }
+    .admin-container {
+      display: flex;
+      min-height: 100vh;
+      background: #222;
+    }
+    .admin-left {
+      background: #fff;
+      flex: 0 0 58%;
+      padding: 46px 48px 20px 48px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .admin-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+    .admintitle {
+      font-size: 3.2em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #222;
+    }
+    .logout {
+      font-size: 1.4em;
+      cursor: pointer;
+      color: #222;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .logout:hover {
+      color: #b43731;
+      text-decoration: underline;
+    }
+    .userid {
+      font-size: 1.2em;
+      font-weight: 700;
+      color: rgba(187, 187, 187, 1);
+      margin-bottom: 22px;
+    }
+    .divider {
+      border-bottom: 3px solid #222;
+      margin-bottom: 34px;
+    }
+    .flash-msg {
+      width: 92%;
+      margin-bottom: 12px;
+      color: #b43731;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 92%;
+    }
+    .accordion-section {
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      border: 1px solid #e2e2e2;
+      overflow: hidden;
+    }
+    .accordion-header {
+      padding: 22px 26px;
+      font-size: 1.27em;
+      font-weight: 600;
+      color: #222;
+      background: #eeeff0;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      user-select: none;
+      transition: background 0.18s;
+    }
+    .accordion-header.active, .accordion-header:hover {
+      background: #e4e9ea;
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      background: #fff;
+      padding: 0 26px;
+      transition: max-height 0.35s cubic-bezier(.4,0,.2,1);
+    }
+    .accordion-content.active {
+      padding: 20px 26px 28px 26px;
+      max-height: 480px;
+      transition: max-height 0.5s cubic-bezier(.4,0,.2,1);
+    }
+    .admin-form label {
+      display: block;
+      margin-bottom: 6px;
+      margin-top: 18px;
+      font-size: 1em;
+    }
+    .admin-form input[type=text],
+    .admin-form input[type=password] {
+      padding: 7px 10px;
+      font-size: 1em;
+      border-radius: 4px;
+      border: 1px solid #adbcc8;
+      width: 86%;
+      background: #f9f9f9;
+      margin-bottom: 3px;
+    }
+    .admin-form input[type=checkbox] {
+      margin-left: 2px;
+      margin-bottom: 1px;
+    }
+    .admin-form button {
+      margin-top: 16px;
+      background: #333;
+      color: #fff;
+      border: none;
+      font-size: 1.08em;
+      padding: 9px 22px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.18s;
+    }
+    .admin-form button:hover {
+      background: #3a9d9d;
+    }
+    .user-list-table {
+      width: 88%;
+      border-collapse: collapse;
+      margin-top: 4px;
+    }
+    .user-list-table th,
+    .user-list-table td {
+      padding: 7px 8px;
+      border-bottom: 1px solid #ddd;
+      font-size: 1em;
+      text-align: left;
+    }
+    .user-list-table th {
+      background: #f6f6f6;
+      font-weight: 600;
+    }
+    .del-btn-table {
+      background: #b43731;
+      font-size: 0.98em;
+      padding: 6px 16px;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.19s;
+    }
+    .del-btn-table:hover {
+      background: #941c19;
+    }
+    .activity-panel {
+      flex: 0 0 42%;
+      background: #fff;
+      border-left: 1px solid #ddd;
+      padding: 46px 36px 20px 36px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      min-height: calc(100vh - 34px);
+      white-space: pre-wrap;
+      font-family: monospace, monospace;
+      font-size: 0.9em;
+      color: #222;
+    }
+    .activity-title {
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0; left: 0;
+      width: 100vw;
+      height: 34px;
+      background: #111;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 16px;
+      padding-right: 24px;
+      box-sizing: border-box;
+      font-size: 1em;
+      z-index: 10;
+    }
+    .version { opacity: 0.7; }
+    .credit {
+      font-weight: 400;
+      text-align: right;
+      width: 100%;
+      max-width: 220px;
+    }
+    @media (max-width: 950px) {
+      .admin-container {
+        flex-direction: column;
+      }
+      .activity-panel {
+        flex: none;
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding: 24px 24px 16px 24px;
+        max-height: 180px;
+        overflow-y: auto;
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <div class="admin-left">
+      <div class="admin-header-row">
+        <span class="admintitle">admin panel</span>
+        <a href="{{ url_for('logout') }}" class="logout">logout</a>
+      </div>
+      <div class="userid">
+        [{{ current_user.username }}]
+      </div>
+      <div class="divider"></div>
+
+      {% if msg %}
+      <div class="flash-msg">{{ msg }}</div>
+      {% endif %}
+
+      <div class="accordion">
+        <div class="accordion-section">
+          <button class="accordion-header" onclick="toggleAccordion(0)">Register User</button>
+          <div class="accordion-content">
+            <form method="post" class="admin-form">
+              <input type="hidden" name="register_user" value="1" />
+              <label for="username">Username:</label>
+              <input type="text" name="username" required />
+              <label for="password">Password:</label>
+              <input type="password" name="password" required />
+              <label>
+                <input type="checkbox" name="is_admin" /> Is Admin
+              </label><br />
+              <button type="submit">Create User</button>
+            </form>
+          </div>
+        </div>
+        <div class="accordion-section">
+          <button class="accordion-header" onclick="toggleAccordion(1)">Delete User</button>
+          <div class="accordion-content">
+            <form method="post" class="admin-form">
+              <input type="hidden" name="delete_user" value="1" />
+              <label for="username">Select user to delete:</label>
+              <select name="username" required>
+                <option value="">--Choose User--</option>
+                {% for user in users %}
+                  <option value="{{ user.username }}">{{ user.username }}{% if user.is_admin %} (admin){% endif %}</option>
+                {% endfor %}
+              </select>
+              <button type="submit" class="del-btn-table">Delete User</button>
+            </form>
+            <table class="user-list-table">
+              <tr><th>UserID</th><th>Admin?</th></tr>
+              {% for user in users %}
+                <tr><td>{{ user.username }}</td><td>{% if user.is_admin %}<b>yes</b>{% else %}no{% endif %}</td></tr>
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activity-panel">
+      <div class="activity-title">Activity</div>
+      {% if activity_logs %}
+      <pre>
+{% for line in activity_logs %}
+{{ line }}
+{% endfor %}
+      </pre>
+      {% else %}
+      <p>No activity logs found.</p>
+      {% endif %}
+    </div>
+  </div>
+  <div class="footer">
+    <span class="version">v.01</span>
+    <span class="credit">made by yadnexsh</span>
+  </div>
+
+  <script>
+    function toggleAccordion(index) {
+      var headers = document.querySelectorAll('.accordion-header');
+      var contents = document.querySelectorAll('.accordion-content');
+      for(var i=0; i<contents.length; i++) {
+        if(i === index) {
+          headers[i].classList.toggle('active');
+          contents[i].classList.toggle('active');
+        } else {
+          headers[i].classList.remove('active');
+          contents[i].classList.remove('active');
+        }
+      }
+    }
+    window.onload = function() {
+      toggleAccordion(0);
+    };
+  </script>
+</body>
+</html>

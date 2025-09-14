@@ -1,0 +1,1117 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 03:01:06] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:01:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:01:22] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:01:42 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 03:01:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:01:42] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:01:47 > admin > logout > username: admin
+127.0.0.1 - - [12/Sep/2025 03:01:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:01:47] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:01:51 > 123 > login > username: 123
+127.0.0.1 - - [12/Sep/2025 03:01:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:01:51] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:01:59 > 123 > logout > username: 123
+127.0.0.1 - - [12/Sep/2025 03:01:59] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:01:59] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:02:04] "POST /login HTTP/1.1" 200 -
+2025-09-12 > 03:02:08 > test > login > username: test
+127.0.0.1 - - [12/Sep/2025 03:02:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:02:08] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:02:34 > test > logout > username: test
+127.0.0.1 - - [12/Sep/2025 03:02:34] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:02:34] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:02:38 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 03:02:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:02:38] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:02:41 > admin > change_admin_status > granted admin to 123
+127.0.0.1 - - [12/Sep/2025 03:02:41] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:02:41] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:02:45 > admin > logout > username: admin
+127.0.0.1 - - [12/Sep/2025 03:02:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:02:45] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:02:48 > 123 > login > username: 123
+127.0.0.1 - - [12/Sep/2025 03:02:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:02:48] "GET /dashboard HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 03:07:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:03] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:07:06 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 03:07:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:06] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:13] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:13] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:16] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:17] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:17] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:18] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:19] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:19] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:20] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:20] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:21] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:21] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:22] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:22] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:25 > admin > delete_user > deleted user admin_2
+127.0.0.1 - - [12/Sep/2025 03:07:25] "[32mPOST /delete_user/admin_2 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:25] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:26 > admin > delete_user > deleted user admin_4
+127.0.0.1 - - [12/Sep/2025 03:07:26] "[32mPOST /delete_user/admin_4 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:26] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:28 > admin > delete_user > deleted user admin_3
+127.0.0.1 - - [12/Sep/2025 03:07:28] "[32mPOST /delete_user/admin_3 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:28] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:30 > admin > delete_user > deleted user test
+127.0.0.1 - - [12/Sep/2025 03:07:30] "[32mPOST /delete_user/test HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:30] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:31 > admin > delete_user > deleted user test2
+127.0.0.1 - - [12/Sep/2025 03:07:31] "[32mPOST /delete_user/test2 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:31] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:32 > admin > delete_user > deleted user test_1
+127.0.0.1 - - [12/Sep/2025 03:07:32] "[32mPOST /delete_user/test_1 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:32] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:33 > admin > delete_user > deleted user test_3
+127.0.0.1 - - [12/Sep/2025 03:07:33] "[32mPOST /delete_user/test_3 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:33] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:35 > admin > change_admin_status > removed admin to 123
+127.0.0.1 - - [12/Sep/2025 03:07:35] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:35] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:37] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:37] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:07:38] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:38] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:07:40 > admin > logout > username: admin
+127.0.0.1 - - [12/Sep/2025 03:07:40] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:07:40] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:08:43 > 123 > login > username: 123
+127.0.0.1 - - [12/Sep/2025 03:08:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:08:43] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:08:46] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:08:50] "POST /login HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 03:13:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:13:15] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:13:18 > 123 > login > username: 123
+127.0.0.1 - - [12/Sep/2025 03:13:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:13:19] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:13:20 > 123 > logout > username: 123
+127.0.0.1 - - [12/Sep/2025 03:13:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:13:20] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:13:23 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 03:13:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:13:23] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:13:29] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:13:29] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:13:31] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:13:31] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:14:38 > admin > logout > username: admin
+127.0.0.1 - - [12/Sep/2025 03:14:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:14:38] "GET /login HTTP/1.1" 200 -
+2025-09-12 > 03:14:45 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 03:14:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:14:45] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:14:48] "GET /register HTTP/1.1" 200 -
+2025-09-12 > 03:14:56 > admin > user_created > created user 1 by admin
+2025-09-12 > 03:14:56 > admin > create_user > new_username: 1, is_admin: True
+127.0.0.1 - - [12/Sep/2025 03:14:56] "[32mPOST /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:14:56] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:15:00] "[32mPOST /edit_users HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:15:00] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:15:02 > admin > delete_user > deleted user 123
+127.0.0.1 - - [12/Sep/2025 03:15:02] "[32mPOST /delete_user/123 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:15:02] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:16:23] "GET /upload HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:16:25] "GET /dashboard HTTP/1.1" 200 -
+2025-09-12 > 03:16:25 > admin > logout > username: admin
+127.0.0.1 - - [12/Sep/2025 03:16:25] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:16:25] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:16:29] "POST /login HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 03:55:12] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 03:55:12] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:55:12] "GET /media/server/login.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:56:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 03:56:38] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 03:57:53] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:57:53] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 03:58:32] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:58:32] "[33mGET /media/server/login.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 03:58:40] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:58:40] "[33mGET /media/server/login.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 03:58:41] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:58:41] "[33mGET /media/server/login.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 03:58:43] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:58:43] "[33mGET /media/server/login.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 03:59:02] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:59:02] "GET /media/server/login.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:59:11] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 03:59:11] "GET /media/server/login.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:02:39] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:02:39] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:02:52] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:02:52] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:02:53] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:02:53] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:02:53] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:02:53] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:02:53] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:02:53] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:02:53] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:02:53] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:03:38] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:03:38] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:03:39] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:03:39] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:03:39] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:03:39] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:03:40] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:03:40] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:04:37] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:04:37] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:07:50] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:07:50] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:07:59] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:07:59] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:08:00] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:08:00] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:08:00] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:08:00] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:08:00] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:08:00] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:08:01] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:08:01] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:08:20] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:08:20] "GET /media/server/login.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:10:37] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:10:37] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:12:54] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:12:54] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:15:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:15:46] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:15:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:15:46] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:17:22] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:17:22] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:25] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:25] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:26] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:26] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:27] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:27] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:27] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:28] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:28] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:29] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:29] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:30:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:30:30] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:31:14] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:31:14] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:31:15] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:31:15] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:31:15] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:31:15] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:31:32] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:31:32] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:31:33] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:31:33] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:31:33] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:31:33] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:31:34] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:31:34] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:22] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:22] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:22] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:22] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:22] "GET /media/server/login_background.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:22] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[36mGET /media/server/login_background.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:23] "[36mGET /media/server/login_background.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login_background.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login_background.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login_background.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login_background.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[36mGET /media/server/login_background.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:24] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:25] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:25] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:25] "[33mGET /media/server/login_background.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:25] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:25] "[36mGET /media/server/login_background.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:25] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:34] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:34] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:34] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:34] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:34] "GET /media/server/login_background.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:34] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:39:35] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:13] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:13] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:13] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:13] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:13] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:14] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:14] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:14] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:14] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:14] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:15] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:15] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:15] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:15] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:15] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:15] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:16] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:17] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:18] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:18] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:18] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:18] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:18] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:19] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:19] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:19] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:19] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:19] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:20] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:21] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:22] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:22] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:22] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:23] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:23] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:23] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:23] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:23] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:23] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:45:24] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:41] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:51:41] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:41] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:41] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:41] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:41] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:42] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:43] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:51:43] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:43] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:43] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:51:43] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:51:43] "[33mGET /media/server/login_background.${ext} HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:52:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:24] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:24] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:24] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:25] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:26] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:52:26] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:26] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:26] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:26] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:52:27] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:27] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:27] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:27] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:28] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:52:29] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:52:29] "[33mGET /media/server/login_background.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:29] "[33mGET /media/server/login_background.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 04:52:29] "[36mGET /media/server/login_background.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 04:56:15] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:15] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:56:16] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:16] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:17] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:56:18] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:18] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:56:18] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:56:18] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:25] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:25] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:25] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:25] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:26] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:26] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:27] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:27] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:28] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:28] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:29] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:29] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:30] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:30] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:30] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:30] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:31] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:31] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:32] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:32] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:32] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:32] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:33] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:33] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:33] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:33] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:34] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:34] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:34] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:34] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:35] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:35] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:35] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:35] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 04:57:36] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 04:57:36] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 13:31:31] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 13:31:31] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 13:31:31] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 13:31:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-12 > 13:31:38 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 13:31:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 13:31:38] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 13:33:58] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 13:50:34] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 13:54:07] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 13:54:25] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 13:56:14] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 13:56:14] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 13:56:28] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:05:41] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Sep/2025 14:05:41] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:05:41] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:05:42] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=W3fLj4wZ5JWlHZsbWIOU HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:05:42] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:05:45] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Sep/2025 14:05:45] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:05:45] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:05:45] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=W3fLj4wZ5JWlHZsbWIOU HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:05:45] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:06:08] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Sep/2025 14:06:08] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:06:08] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:06:08] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=W3fLj4wZ5JWlHZsbWIOU HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:06:08] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:07:53] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Sep/2025 14:07:53] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:07:53] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:07:53] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=W3fLj4wZ5JWlHZsbWIOU HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:07:53] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 14:08:27] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 14:08:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:08:27] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 14:08:32 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 14:08:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 14:08:32] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Sep/2025 14:08:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:08:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:08:32] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=SA6YJWKcn4HOIQdsOxBq HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:10:19] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:15:33] "GET /upload HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:15:37] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:16:23] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:16:23] "[33mGET /media/upload/sample.jpg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2025 14:21:15] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:21:15] "GET /media/server/dashboard.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:24:28] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:24:28] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:24:45] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:24:45] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:29:57] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:29:57] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:49:15] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:49:15] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:51:05] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:51:05] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:51:54] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:51:55] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:56:26] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:56:26] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 14:56:26] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 14:56:26] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:01:41] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 15:01:41] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:04:30] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Sep/2025 15:04:30] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:04:30] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:04:30] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=SA6YJWKcn4HOIQdsOxBq HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:04:30] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:04:37] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 15:04:37] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:07:51] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Sep/2025 15:07:51] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:07:51] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:07:52] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=SA6YJWKcn4HOIQdsOxBq HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:07:52] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:07:56] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 15:07:56] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:08:41] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 15:08:41] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:08:53] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 15:08:53] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:37:51] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 15:37:51] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 15:37:52] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 15:37:52] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 18:50:00] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:50:00] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:01] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:05] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:05] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:06] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:06] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:06] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:06] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:07] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:07] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:09] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:09] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:10] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:10] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:10] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:10] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:11] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:11] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:12] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:12] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:13] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:13] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:14] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:14] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:15] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:15] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:16] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:16] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:50:20 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 18:50:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:50:20] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:20] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:37] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:37] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:50:44] "GET /register HTTP/1.1" 200 -
+2025-09-12 > 18:50:54 > admin > user_created > created user sunshu by admin
+2025-09-12 > 18:50:54 > admin > create_user > new_username: sunshu, is_admin: False
+127.0.0.1 - - [12/Sep/2025 18:50:54] "[32mPOST /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:50:54] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:50:54] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:51:49] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:51:53] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:51:53] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:52:05] "GET /register HTTP/1.1" 200 -
+2025-09-12 > 18:52:32 > system > user_created > [DEFAULT] system created admin
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 18:52:41] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:52:41] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:52:41] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:52:52] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:52:52] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:53:12 > admin > logout > username: admin
+127.0.0.1 - - [12/Sep/2025 18:53:12] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:53:12] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:53:12] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:53:17] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:53:17] "GET /login?next=/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:53:17] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:53:24] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:53:24] "GET /login?next=/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:53:24] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:53:30] "POST /login?next=/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:53:30] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:53:34] "[32mGET /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:53:34] "GET /login?next=/register HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:53:34] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-989-750
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [12/Sep/2025 18:53:57] "GET /login?next=/register HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:53:57] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:54:00] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:54:00] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:00] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:54:02] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:54:02] "GET /login?next=/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:02] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:54:20 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 18:54:20] "[32mPOST /login?next=/dashboard HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:54:20] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:20] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:54:26] "GET /register HTTP/1.1" 200 -
+2025-09-12 > 18:54:32 > admin > user_created > created user sunsh by admin
+2025-09-12 > 18:54:32 > admin > create_user > new_username: sunsh, is_admin: False
+127.0.0.1 - - [12/Sep/2025 18:54:32] "[32mPOST /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:54:32] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:32] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:54:35 > admin > logout > username: admin
+127.0.0.1 - - [12/Sep/2025 18:54:35] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:54:35] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:35] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:54:39] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:39] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:54:44] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:44] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:54:48 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 18:54:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:54:48] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:48] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:54:51] "GET /register HTTP/1.1" 200 -
+2025-09-12 > 18:54:58 > admin > user_created > created user sunshine by admin
+2025-09-12 > 18:54:58 > admin > create_user > new_username: sunshine, is_admin: False
+127.0.0.1 - - [12/Sep/2025 18:54:58] "[32mPOST /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:54:58] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:54:58] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:55:00 > admin > logout > username: admin
+127.0.0.1 - - [12/Sep/2025 18:55:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:55:00] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:00] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:55:04 > sunshine > login > username: sunshine
+127.0.0.1 - - [12/Sep/2025 18:55:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:55:04] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:04] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:55:13] "[32mGET /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:55:13] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:13] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:55:19] "[32mGET /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:55:19] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:19] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:55:26] "[32mGET /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:55:26] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:26] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:55:34] "[32mGET /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:55:34] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:34] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:55:36 > sunshine > logout > username: sunshine
+127.0.0.1 - - [12/Sep/2025 18:55:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:55:36] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:36] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-12 > 18:55:39 > admin > login > username: admin
+127.0.0.1 - - [12/Sep/2025 18:55:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Sep/2025 18:55:39] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:39] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Sep/2025 18:55:41] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:44] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2025 18:55:44] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 04:53:10] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 04:53:10] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 04:53:10] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 04:53:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-14 > 04:53:15 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 04:53:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 04:53:15] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 04:53:15] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 04:58:07] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 04:58:07] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 04:58:08] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 04:58:08] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:00:06] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:00:06] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:00:15] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:00:15] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:00:17] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:00:17] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:00:23] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:00:23] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:00:26] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:00:26] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:00:28] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:00:28] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:00:35] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:00:35] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:03:41] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:03:41] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:03:41] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:03:41] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:03:48] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:03:48] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:03:53] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:03:53] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:04:08] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:04:08] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:04:22] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:04:22] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:06:03] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:06:03] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:06:45] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:06:45] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:01] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:01] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:07] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:07] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:22] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:23] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:24] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:24] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:24] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:24] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:33] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:33] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:37] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:37] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:38] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:38] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:41] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:41] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:08:48] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:08:48] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:09:05] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:09:05] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:09:11] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:09:11] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:10:23] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:10:23] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:11:17] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:11:17] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:11:24] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:11:24] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:11:27] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:11:27] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:11:31] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:11:31] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:12:15] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:12:15] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 05:12:29 > admin > logout > username: admin
+127.0.0.1 - - [14/Sep/2025 05:12:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:12:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:12:29] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:12:33] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:12:33] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 05:12:38 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 05:12:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:12:38] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:12:38] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:12:42] "GET /register HTTP/1.1" 200 -
+2025-09-14 > 05:12:51 > admin > user_created > created user 123 by admin
+2025-09-14 > 05:12:51 > admin > create_user > new_username: 123, is_admin: False
+127.0.0.1 - - [14/Sep/2025 05:12:51] "[32mPOST /register HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:12:51] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:12:51] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 05:12:54 > admin > logout > username: admin
+127.0.0.1 - - [14/Sep/2025 05:12:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:12:54] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:12:54] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 05:12:57 > 123 > login > username: 123
+127.0.0.1 - - [14/Sep/2025 05:12:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:12:57] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:12:57] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:13:07] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:13:07] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:13:13] "GET /upload HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:13:15] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:13:15] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 05:21:55] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:21:55] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:21:55] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 05:21:58 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 05:21:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:21:58] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:21:58] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:22:06] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+127.0.0.1 - - [14/Sep/2025 05:22:06] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:22:06] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:22:06] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=2snvuW3Jcpvy1T88Djh0 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:22:06] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 05:25:19] "GET /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 05:27:17] "GET /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 05:27:45] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:27:45] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:27:45] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 05:27:48 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 05:27:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:27:48] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:27:48] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:27:52] "GET /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 05:28:36] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:28:37] "GET /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 05:35:21] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:35:21] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 05:36:25 > admin > delete_user > deleted user 123
+127.0.0.1 - - [14/Sep/2025 05:36:25] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:36:25] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 05:47:34] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 05:48:36 > admin > user_created > created user yadnexsh by admin
+2025-09-14 > 05:48:36 > admin > create_user > new_username: yadnexsh, is_admin: False
+127.0.0.1 - - [14/Sep/2025 05:48:36] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 05:48:45 > admin > delete_user > deleted user yadnexsh
+127.0.0.1 - - [14/Sep/2025 05:48:45] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:49:12] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 05:49:18 > admin > delete_user > deleted user sunshine
+127.0.0.1 - - [14/Sep/2025 05:49:18] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 05:54:18] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 05:54:27 > admin > user_created > created user admin/2 by admin
+2025-09-14 > 05:54:27 > admin > create_user > new_username: admin/2, is_admin: False
+127.0.0.1 - - [14/Sep/2025 05:54:27] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 05:59:27] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:59:27] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:59:27] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 05:59:33 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 05:59:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 05:59:33] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [14/Sep/2025 05:59:33] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:59:33] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:59:33] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=eyeRMceXJkoIJfire8R1 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 05:59:34] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:05:32] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [14/Sep/2025 06:05:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 06:05:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 06:05:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=eyeRMceXJkoIJfire8R1 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 06:05:32] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 06:05:51] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 06:05:51] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:05:51] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 06:05:57 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 06:05:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 06:05:57] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+127.0.0.1 - - [14/Sep/2025 06:05:57] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 06:05:57] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 06:05:57] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=6pzAU1pF7ix6iDhaLcvy HTTP/1.1" 200 -
+ * Detected change in 'H:\\TREK PHOTO APP\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 06:09:51] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 06:09:51] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:09:52] "[36mGET /media/server/login.jpg HTTP/1.1[0m" 304 -
+2025-09-14 > 06:09:56 > admin > login > username: admin
+127.0.0.1 - - [14/Sep/2025 06:09:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 06:09:56] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 06:09:56] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 06:10:00] "GET /admin HTTP/1.1" 200 -
+2025-09-14 > 06:10:19 > admin > user_created > created user 123 by admin
+2025-09-14 > 06:10:19 > admin > create_user > new_username: 123, is_admin: True
+127.0.0.1 - - [14/Sep/2025 06:10:19] "POST /admin HTTP/1.1" 200 -
