@@ -1471,3 +1471,75 @@
  * Debugger is active!
  * Debugger PIN: 138-546-674
 ================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 08:32:23] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:32:29 > admin > user_created > ydar
+127.0.0.1 - - [14/Sep/2025 08:32:29] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:32:33 > admin > delete_user > deleted user ydar
+127.0.0.1 - - [14/Sep/2025 08:32:33] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 08:35:21] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:35:27 > admin > user_created > ydar
+127.0.0.1 - - [14/Sep/2025 08:35:27] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:35:35 > admin > user_created > ydart
+127.0.0.1 - - [14/Sep/2025 08:35:35] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:35:47 > admin > user_created > sune
+127.0.0.1 - - [14/Sep/2025 08:35:47] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:35:56 > admin > user_created > sunet
+127.0.0.1 - - [14/Sep/2025 08:35:56] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:36:39 > admin > user_created > sunel
+127.0.0.1 - - [14/Sep/2025 08:36:39] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:36:47 > admin > user_created > sunej
+127.0.0.1 - - [14/Sep/2025 08:36:47] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:37:36 > admin > delete_user > deleted user sune
+127.0.0.1 - - [14/Sep/2025 08:37:36] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:37:46 > admin > delete_user > deleted user ydar
+127.0.0.1 - - [14/Sep/2025 08:37:46] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:37:52] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:39:32 > system > user_created > [DEFAULT] system created admin
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+================================================================ SERVER LOG DIVIDER ================================================================
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 08:39:36] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:39:36] "[36mGET /media/server/dashboard.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [14/Sep/2025 08:39:40] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:39:41] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:39:42] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:39:42] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:39:43] "GET /admin HTTP/1.1" 200 -
+2025-09-14 > 08:39:46 > admin > user_created > ydar
+127.0.0.1 - - [14/Sep/2025 08:39:46] "POST /admin HTTP/1.1" 200 -
+2025-09-14 > 08:39:53 > admin > delete_user > deleted user ydar
+127.0.0.1 - - [14/Sep/2025 08:39:53] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:39:59] "POST /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 138-546-674
+================================================================ SERVER LOG DIVIDER ================================================================
+127.0.0.1 - - [14/Sep/2025 08:40:29] "[32mPOST /admin HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 08:40:29] "GET /admin HTTP/1.1" 200 -
+2025-09-14 > 08:40:40 > admin > user_created > rssr
+127.0.0.1 - - [14/Sep/2025 08:40:40] "[32mPOST /admin HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 08:40:40] "GET /admin HTTP/1.1" 200 -
+2025-09-14 > 08:40:48 > admin > delete_user > deleted user rssr
+127.0.0.1 - - [14/Sep/2025 08:40:48] "[32mPOST /admin HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 08:40:48] "GET /admin HTTP/1.1" 200 -
+2025-09-14 > 08:40:51 > admin > user_created > ydar
+127.0.0.1 - - [14/Sep/2025 08:40:51] "[32mPOST /admin HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 08:40:51] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:40:58] "GET /admin HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2025 08:40:59] "GET /admin HTTP/1.1" 200 -
+2025-09-14 > 08:41:05 > admin > delete_user > deleted user ydar
+127.0.0.1 - - [14/Sep/2025 08:41:05] "[32mPOST /admin HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Sep/2025 08:41:05] "GET /admin HTTP/1.1" 200 -
+ * Detected change in 'H:\\kivi\\app.py', reloading
+ * Restarting with stat

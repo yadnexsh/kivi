@@ -52,3 +52,18 @@
 2025-09-14 > 08:30:50 > admin > delete_user > deleted user ydar1
 2025-09-14 > 08:32:29 > admin > user_created > ydar
 2025-09-14 > 08:32:33 > admin > delete_user > deleted user ydar
+2025-09-14 > 08:35:27 > admin > user_created > ydar
+2025-09-14 > 08:35:35 > admin > user_created > ydart
+2025-09-14 > 08:35:47 > admin > user_created > sune
+2025-09-14 > 08:35:56 > admin > user_created > sunet
+2025-09-14 > 08:36:39 > admin > user_created > sunel
+2025-09-14 > 08:36:47 > admin > user_created > sunej
+2025-09-14 > 08:37:36 > admin > delete_user > deleted user sune
+2025-09-14 > 08:37:46 > admin > delete_user > deleted user ydar
+2025-09-14 > 08:39:32 > system > user_created > [DEFAULT] system created admin
+2025-09-14 > 08:39:46 > admin > user_created > ydar
+2025-09-14 > 08:39:53 > admin > delete_user > deleted user ydar
+2025-09-14 > 08:40:40 > admin > user_created > rssr
+2025-09-14 > 08:40:48 > admin > delete_user > deleted user rssr
+2025-09-14 > 08:40:51 > admin > user_created > ydar
+2025-09-14 > 08:41:05 > admin > delete_user > deleted user ydar
